@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Mythology Facts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f7f2e9;
+            margin: 0;
+        }
+
+        h1.text {
+            max-width: 600px;
+            text-align: center;
+            font-size: 1.5rem;
+            padding: 20px;
+            background: #fff5e1;
+            border: 1px solid #ffd580;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            transition: opacity 0.5s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text">Loading....</h1>
+    <script>
+        const text = document.querySelector(".text");
+
+        async function Mythological() {
+            try {
+                const response = await fetch("/api/facts/random");
+                const result = await response.json();
+                text.style.opacity = 0;
+                setTimeout(() => {
+                    text.innerHTML = result.fact;
+                    text.style.opacity = 1;
+                }, 200);
+            } catch (error) {
+                text.innerHTML = "Failed to Fetch Indian Mythological Facts";
+                console.error(error);
+            } finally {
+                setTimeout(Mythological, 5000);
+            }
+        }
+
+        Mythological();
+    </script>
+</body>
+
+</html>
