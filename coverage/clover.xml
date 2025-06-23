@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1750664791588" clover="3.2.0">
-  <project timestamp="1750664791588" name="All files">
+<coverage generated="1750666192010" clover="3.2.0">
+  <project timestamp="1750666192010" name="All files">
     <metrics statements="57" coveredstatements="39" conditionals="8" coveredconditionals="2" methods="10" coveredmethods="4" elements="75" coveredelements="45" complexity="0" loc="57" ncloc="57" packages="2" files="2" classes="2"/>
     <package name="mythology-api">
       <metrics statements="53" coveredstatements="35" conditionals="8" coveredconditionals="2" methods="10" coveredmethods="4"/>
@@ -65,10 +65,10 @@
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="Fact.js" path="C:\Users\KIIT\Desktop\JavaScript\New folder\mythology-api\models\Fact.js">
         <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="1" type="stmt"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
+        <line num="1" count="3" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="10" count="3" type="stmt"/>
+        <line num="11" count="3" type="stmt"/>
       </file>
     </package>
   </project>
