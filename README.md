@@ -147,6 +147,7 @@ mythology-api/
 - ✔️ Integrated database with Mongoose
 - ✔️ Frontend to fetch & display data
 - ✔️ Auto data seeding
+- ✔️ Tested with curl
 - ✔️ Clear documentation
 
 ---
